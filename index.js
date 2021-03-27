@@ -52,6 +52,10 @@ app.post('/addOrder',(req,res)=>{
 })
 });
 
+app.get('/',(req,res)=>{
+    res.send("backend Deploed on heroku");
+})
+
 app.listen(process.env.PORT || 4000,()=>{
     console.log("Server running in port 4000");
 })
